@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coustomer details</title>
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+        <div class="form-style-2">
+        <div class="form-style-2-heading">Coustomer Details</div>
+        <form action="/details" method="POST">
+            <label for='user_name'>
+                <span>Name</span>
+                <input type="text" class="input-field" name="user_name" placeholder="Enter Name" required/>
+            </label>
+            <label for='contact_number'>
+                <span>phone</span>
+                <input type="text" class="input-field" nam="contact_number" placeholder="Enter phone number" required/>
+            </label>
+            <label for='number_of_item'>
+                <span>Number of item</span>
+                <input type="number" class="input-field" name="number_of_item" placeholder="Enter number of item" required/>
+            </label>
+            <label for='amount'>
+                <span>Total amount</span>
+                <input type="number" class="input-field" name="amount" placeholder="Enter total amount" required/>
+            </label>
+            <label for='Current_date'>
+                <span>Date</span>
+                <input type="date" class="input-field" name="Current_date" placeholder="Enter date" required/>
+            </label>
+            <div>
+                <button type="submit" class="submit-button">Submit</button>
+                <a href="/winner" class="btn">Today's winner</a>
+            </div>
+
+        </form>
+        {% if message %}
+        <p class="message">{{message}}</p>
+        {% endif %}
+        </div>
+    </body>
+
+
+
+
+
+    </html>
